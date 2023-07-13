@@ -2,9 +2,9 @@ const express = require("express");
 const router = express.Router();
 
 const Employee = require("../models/employee.models");
-const { generateCrudMethods } = require("../services");
+const { generateCrudMethods } = require("../services/employee.service");
 const employeeCrud = generateCrudMethods(Employee);
-const { validateDbId, raiseRecord404Error } = require("../middlewares");
+const { validateDbId, raiseRecord404Error } = require("../middlewares/employee.middlewares");
 
 router.get(
   "/test",

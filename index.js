@@ -5,7 +5,7 @@ const bodyParser = require('body-parser')
 //local imports
 const connectDb = require('./db.js')
 const employeeRoutes = require('./controllers/employee.controller.js')
-const { errorHandler } = require('./middlewares')
+const { errorHandler } = require('./middlewares/employee.middlewares.js')
 
 const app = express()
 
